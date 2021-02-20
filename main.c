@@ -6,13 +6,13 @@
 /*   By: tjmari <tjmari@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/20 14:53:26 by tjmari            #+#    #+#             */
-/*   Updated: 2021/02/20 15:07:32 by tjmari           ###   ########.fr       */
+/*   Updated: 2021/02/20 15:11:40 by tjmari           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libasm.h"
 
-int     main(void)
+int		main(void)
 {
-    return (0);
+	return (0);
 }
