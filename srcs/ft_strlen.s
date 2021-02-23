@@ -1,7 +1,7 @@
 section .text
 	global _ft_strlen
 
-_ft_strlen: 				; size_t	ft_strlen(const char *str);
+_ft_strlen:					; size_t	ft_strlen(const char *str);
 	xor rax, rax			; set return value (rax) to 0
 
 _count:
