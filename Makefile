@@ -6,7 +6,7 @@
 #    By: tjmari <tjmari@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/02/20 12:00:58 by tjmari            #+#    #+#              #
-#    Updated: 2021/02/20 14:48:44 by tjmari           ###   ########.fr        #
+#    Updated: 2021/02/23 11:36:05 by tjmari           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,8 @@ ORANGE = \033[1;33m
 NAME = libasm.a
 FLAGS = -f macho64
 
-SRCS = ft_strlen.s ft_strcpy.s ft_strcmp.s ft_write.s ft_read.s ft_strdup.s
+SRCS = ./srcs/ft_strlen.s ./srcs/ft_strcpy.s ./srcs/ft_strcmp.s \
+		./srcs/ft_write.s ./srcs/ft_read.s ./srcs/ft_strdup.s
 OBJS = $(SRCS:.s=.o)
 
 %.o: %.s
