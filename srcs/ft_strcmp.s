@@ -17,7 +17,9 @@ _loop:
 	jmp		_loop					; repeat _loop
 
 _return:
-	cmp		al, dl					; compare the two character
+	movzx	rax, al					; [Move with Zero-Extend]
+	movzx	rdx, dl					; [Move with Zero-Extend]
+	cmp		rax, rdx				; compare the two character
 	je		_equal					; if they are equal, goto _equal
 	jg		_greater				; if they are equal, goto _greater
 	jl		_less					; if they are equal, goto _less
