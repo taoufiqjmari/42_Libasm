@@ -2,6 +2,7 @@ section .text
 	global _ft_strcmp
 
 _ft_strcmp:							; int		ft_strcmp(const char *s1, const char *s2);
+									;						rdi				rsi
 	xor		rcx, rcx				; set counter to 0
 
 _loop:
@@ -21,17 +22,17 @@ _return:
 	movzx	edx, dl					; [Move with Zero-Extend]
 	cmp		eax, edx				; compare the two character
 	je		_equal					; if they are equal, goto _equal
-	jg		_greater				; if they are equal, goto _greater
-	jl		_less					; if they are equal, goto _less
+	jg		_greater				; if eax is greater, goto _greater
+	jl		_less					; if eax is less, goto _less
 
 _equal:
 	mov		eax, 0					; set eax to 0
-	ret								; return of function
+	ret								; return of function (rax)
 
 _greater:
 	mov		eax, 1					; set eax to 1
-	ret								; return of function
+	ret								; return of function (rax)
 
 _less:
 	mov		eax, -1					; set eax to -1
-	ret								; return of function
+	ret								; return of function (rax)

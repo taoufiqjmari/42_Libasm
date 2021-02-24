@@ -6,7 +6,7 @@
 #    By: tjmari <tjmari@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/02/20 12:00:58 by tjmari            #+#    #+#              #
-#    Updated: 2021/02/23 11:36:05 by tjmari           ###   ########.fr        #
+#    Updated: 2021/02/24 12:08:06 by tjmari           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,7 +27,7 @@ OBJS = $(SRCS:.s=.o)
 
 all: $(NAME)
 
-$(NAME): $(OBJS)
+$(NAME): $(SRCS) $(OBJS)
 	@ar rc $(NAME) $(OBJS)
 	@echo "$(GREEN)./$(NAME) made\n---------------$(NC)"
 

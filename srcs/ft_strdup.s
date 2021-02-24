@@ -5,6 +5,7 @@ section .text
 	extern  _malloc
 
 _ft_strdup:					; char	*ft_strdup(const char *s1);
+							;					rdi
 	call	_ft_strlen		; call ft_strlen
 	inc		rax				; increment rax for '\0'
 	push	rdi				; save original string
@@ -17,5 +18,5 @@ _ft_strdup:					; char	*ft_strdup(const char *s1);
 	call	_ft_strcpy		; call ft_strcpy
 	ret						; return duplicated string
 
-_err:						;
+_err:
 	ret						; return 0 in case malloc failed
