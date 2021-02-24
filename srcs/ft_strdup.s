@@ -11,11 +11,11 @@ _ft_strdup:					; char	*ft_strdup(const char *s1);
 	mov		rdi, rax		; set parameter for malloc
 	call	_malloc			; call malloc
 	cmp		rax, 0			; check if malloc failed
-	je		_error			; if so, goto _error
+	je		_err			; if so, goto _err
 	mov		rdi, rax		; set first parameter for ft_strcpy
 	pop		rsi				; set second parameters for ft_strcpy
 	call	_ft_strcpy		; call ft_strcpy
 	ret						; return duplicated string
 
-_error:						;
+_err:						;
 	ret						; return 0 in case malloc failed

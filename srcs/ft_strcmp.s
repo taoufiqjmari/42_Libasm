@@ -17,21 +17,21 @@ _loop:
 	jmp		_loop					; repeat _loop
 
 _return:
-	movzx	rax, al					; [Move with Zero-Extend]
-	movzx	rdx, dl					; [Move with Zero-Extend]
-	cmp		rax, rdx				; compare the two character
+	movzx	eax, al					; [Move with Zero-Extend]
+	movzx	edx, dl					; [Move with Zero-Extend]
+	cmp		eax, edx				; compare the two character
 	je		_equal					; if they are equal, goto _equal
 	jg		_greater				; if they are equal, goto _greater
 	jl		_less					; if they are equal, goto _less
 
 _equal:
-	mov		rax, 0					; set rax to 0
+	mov		eax, 0					; set eax to 0
 	ret								; return of function
 
 _greater:
-	mov		rax, 1					; set rax to 1
+	mov		eax, 1					; set eax to 1
 	ret								; return of function
 
 _less:
-	mov		rax, -1					; set rax to -1
+	mov		eax, -1					; set eax to -1
 	ret								; return of function
