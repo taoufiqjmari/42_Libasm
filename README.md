@@ -113,7 +113,7 @@ Inline assembly (typically introduced by the asm keyword) gives the ability to e
 In computer programming, an inline assembler is a feature of some compilers that allows low-level code written in assembly language to be embedded within a program, among code that otherwise has been compiled from a higher-level language such as C or Ada.
 ```
 
-You must use the Intel syntax, not the AT&T<br />you must do ’.s’ files
+you must do ’.s’ files
 * [.s vs .asm](https://stackoverflow.com/questions/34098596/assembly-files-difference-between-a-s-asm)
 
 Beware of the "calling convention"
